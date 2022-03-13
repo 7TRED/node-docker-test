@@ -76,7 +76,7 @@ app.use("/api/v1/posts", postRouter);
 app.use("/api/v1/users", authRouter);
 
 app.get("/api/v1/", (req, res) => {
-	res.send("<h1>Hello World!!!</h1>");
+	res.send("<h1>Hello World man this is great</h1>");
 	console.log("I ran");
 });
 
