@@ -16,7 +16,7 @@ services:
       - NODE_ENV=development
       - MONGO_USER=root
       - MONGO_PASSWORD=password
-      - SESSION_SECRET=sdfhkkhkh122kh3kwekhke,
+      - SESSION_SECRET=sdfhkkhkh122kh3kwekhke
       - REDIS_PASSWORD=password
     command: npm run dev
 
