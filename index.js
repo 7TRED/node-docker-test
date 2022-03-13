@@ -22,10 +22,15 @@ const port = process.env.PORT || 3000;
 
 // creating redis client
 const redisClient = redis.createClient({
-	port: REDIS_PORT,
-	host: REDIS_URL,
-	password: REDIS_PASSWORD,
+	legacyMode: true,
+	socket: {
+		port: REDIS_PORT,
+		host: REDIS_URL,
+		password: REDIS_PASSWORD,
+	},
 });
+
+redisClient.connect().catch(console.error);
 
 const app = express();
 
